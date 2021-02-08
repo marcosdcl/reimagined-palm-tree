@@ -1,4 +1,3 @@
-from _typeshed import FileDescriptor
 from django.db import models
 
 
