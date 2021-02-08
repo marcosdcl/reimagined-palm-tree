@@ -1,3 +1,9 @@
+from team.models import Team
 from django.contrib import admin
 
-# Register your models here.
+
+class TeamAdmin(admin.ModelAdmin):
+    list_display = ('name', 'description')
+
+
+admin.site.register(Team, TeamAdmin)
